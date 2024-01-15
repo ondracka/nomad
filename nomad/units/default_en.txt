@@ -204,6 +204,7 @@ force_kilogram = g_0 * kilogram = pond
 force_gram = g_0 * gram = gf = gram_force
 force_metric_ton = g_0 * metric_ton = tf = metric_ton_force = force_t = t_force
 atomic_unit_of_force = E_h / a_0 = a_u_force
+force_eV_over_A = electron_volt / angstrom = eV_over_Å
 
 # Energy
 [energy] = [force] * [length]
