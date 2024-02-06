@@ -20,7 +20,7 @@
 	url = https://github.com/stur86/crystcif-parse.git
 [submodule "dependencies/parsers/electronic"]
 	path = dependencies/parsers/electronic
-	url = https://github.com/nomad-coe/electronic-parsers.git
+	url = https://github.com/ondracka/electronic-parsers.git
 [submodule "dependencies/parsers/atomistic"]
 	path = dependencies/parsers/atomistic
 	url = https://github.com/nomad-coe/atomistic-parsers.git
