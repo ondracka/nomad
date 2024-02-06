@@ -1733,6 +1733,13 @@ class DFT(MSection):
         """,
         a_elasticsearch=Elasticsearch(material_entry_type),
     )
+    number_spin_channels = Quantity(
+        type=np.int32,
+        description="""
+        Number of spin channels.
+        """,
+        a_elasticsearch=Elasticsearch(material_entry_type),
+    )
     scf_threshold_energy_change = Scf.threshold_energy_change.m_copy()
     scf_threshold_energy_change.m_annotations['elasticsearch'] = Elasticsearch(
         material_entry_type

@@ -83,6 +83,14 @@ const FilterSubMenuDFT = React.memo(({
           disableSearch
         />
       </InputGridItem>
+      <InputGridItem xs={12}>
+        <InputRange
+          quantity="results.method.simulation.dft.number_spin_channels"
+          visible={visible}
+          xs={12}
+        />
+    </InputGridItem>
+
     </InputGrid>
   </FilterSubMenu>
 })
