@@ -85,6 +85,13 @@ const FilterSubMenuDFT = React.memo(({
       </InputGridItem>
       <InputGridItem xs={12}>
         <InputField
+          quantity="results.method.simulation.dft.van_der_Waals_method"
+          visible={visible}
+          disableSearch
+        />
+      </InputGridItem>
+      <InputGridItem xs={12}>
+        <InputField
           quantity="results.method.simulation.dft.spin_polarized"
           visible={visible}
           disableSearch
