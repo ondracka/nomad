@@ -2689,6 +2689,7 @@ class Electronic(MSection):
 
     van_der_waals_method = Quantity(
         type=str,
+        default=unavailable,
         shape=[],
         description="""
         Describes the Van der Waals method. If skipped or an empty string is used, it
