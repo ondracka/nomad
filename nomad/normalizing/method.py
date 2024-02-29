@@ -564,7 +564,12 @@ class DFTMethod(ElectronicMethod):
                 dft.spin_polarized = bool(
                     self._repr_method.electronic.n_spin_channels > 1
                 )
-            dft.van_der_Waals_method = self._repr_method.electronic.van_der_waals_method
+
+            if self._repr_method.electronic.van_der_waals_method == "":
+                dft.van_der_Waals_method = "none"
+            else:
+                dft.van_der_Waals_method = self._repr_method.electronic.van_der_waals_method
+
             dft.relativity_method = self._repr_method.electronic.relativity_method
             dft.number_spin_channels = self._repr_method.electronic.n_spin_channels
         try:
